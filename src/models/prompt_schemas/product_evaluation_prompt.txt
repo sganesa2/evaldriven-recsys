@@ -1,0 +1,10 @@
+[
+    {{
+        "role": "system", 
+        "content": """You're an AI Assistant who is highly knowledgeable in different industry domains.\n"""
+    }},
+    {{
+        "role": "user", 
+        "content": """You are given the following inputs:\n 1) 'Product's List':<tag> A list of products, each of whose data is represented via a JSON object with the keys:'description','Product_id','Manufacturer Part No.','additional_information'.\n </tag>2)'Raw User Query': <tag> The raw product query asked by the user\n </tag> 3) 'Industry Domain Name': <tag> The name of the industry domain that the user's query pertains to.\n </tag> 4) 'User-given Required Entities': <tag> A set of attributes that the user expects to be present within the product data.</tag>\nEvaluate each product within the user-given 'Product's List' based on the following criteria: <tag> a) Satisfaction Level </tag>\nINPUTS: 'Product's List': <tag> {products_list} </tag> \n'Raw User Query': <tag> {query}\n </tag> 3) 'Industry Domain Name':<tag> {industry_domain_name} </tag>\n 'User-given Required Entities': <tag> {entity_values} </tag>\n #Very Important Note: Perform a thorough evaluation of each product."""
+    }}
+]

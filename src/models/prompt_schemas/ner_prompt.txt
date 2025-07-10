@@ -1,0 +1,10 @@
+[
+    {{
+        "role": "system", 
+        "content": """You are an AI Assistant who is proficient at 'Semantic and Keyword Based Interpretation' of product queries asked by customers."""
+    }},
+    {{
+        "role": "user", 
+        "content": """<Task>: Perform a 'Semantic and Keyword Based <Named Entity Recognition' on a 'Product Query' asked by the user.\n You are given the following inputs:\n INPUTS: 'Product Query': {product_query}\n <Very Important Note>: Perform a very thorough analysis while performing this task.\n Ensure that you've used the information provided to you by the user to your best ability, and more importantly ensure that you've correctly interpreted both the 'Semantic-based context ' and the 'Keyword-based context' of the inputted 'Product Search Query'.\n"""
+    }}
+]
